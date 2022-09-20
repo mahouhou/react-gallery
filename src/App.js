@@ -9,6 +9,8 @@ import avocado from "./assets/image6.jpeg";
 
 const images = [cabbage, mango, fig, gaze, peach, avocado];
 
+// Loading component for images, with progress bar
+// Value of progress bar is based on how many images have loaded so far
 const Loading = ({ calculatedWidth }) => (
   <aside>
     <div className="loading-bar">
@@ -24,12 +26,25 @@ const App = () => {
 
   const handleClick = () => {
     const length = images.length - 1;
-
+    // If the current image is less than the total number of images
+    // Move on to the next image in the sequence,
+    // Otherwise loop round to the start
     setCurrentImage((currentImage) =>
       currentImage < length ? currentImage + 1 : 0
     );
   };
 
+  // I added a custom back click function for
+  // The back arrow I added to the navigation
+  const handleBackClick = () => {
+    const length = images.length - 1;
+    setCurrentImage((currentImage) =>
+      currentImage > 0 ? currentImage - 1 : length
+    );
+  };
+
+  // When each image has loaded, this function is called
+  // Which keeps count of how many images have been loaded
   const handleImageLoad = () => {
     setNumLoaded((numLoaded) => numLoaded + 1);
   };
@@ -48,14 +63,15 @@ const App = () => {
           <Loading calculatedWidth={(numLoaded / images.length) * 100} />
         )}
         <figcaption>
-          {currentImage + 1} / {images.length}
+          {/* I added forward and back arrows for navigating through the images
+            * And I removed the onClick from the images */}
+          <a onClick={handleBackClick} >&#8592;</a> {currentImage + 1} / {images.length} <a onClick={handleClick} >&#8594;</a>
         </figcaption>
         {images.map((imageURL, index) => (
           <img
             alt=""
             key={imageURL}
             src={imageURL}
-            onClick={handleClick}
             onLoad={handleImageLoad}
             className={currentImage === index ? "display" : "hide"}
           />

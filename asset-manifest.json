@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/superhi-gallery/static/css/main.de0d29d5.css",
+    "main.js": "/superhi-gallery/static/js/main.c59459c5.js",
+    "static/media/image3.jpeg": "/superhi-gallery/static/media/image3.b5c8e77299a6b79d1df8.jpeg",
+    "static/media/image1.jpeg": "/superhi-gallery/static/media/image1.808833ab907e5b92c258.jpeg",
+    "static/media/image2.jpeg": "/superhi-gallery/static/media/image2.d6e2aa999281f1d7a274.jpeg",
+    "static/media/image4.jpeg": "/superhi-gallery/static/media/image4.a508b42c9a441b010ef5.jpeg",
+    "static/media/image6.jpeg": "/superhi-gallery/static/media/image6.03053c0072fcb68a447c.jpeg",
+    "static/media/image5.jpeg": "/superhi-gallery/static/media/image5.b53cf11ea65e177fb036.jpeg",
+    "index.html": "/superhi-gallery/index.html",
+    "main.de0d29d5.css.map": "/superhi-gallery/static/css/main.de0d29d5.css.map",
+    "main.c59459c5.js.map": "/superhi-gallery/static/js/main.c59459c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de0d29d5.css",
+    "static/js/main.c59459c5.js"
+  ]
+}

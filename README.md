@@ -1,29 +1,12 @@
 # Zesty
 
-A simple photo gallery carousel website.
+## A React photo gallery component
 
-## Forked
+This project was part of the SuperHi ReactJS coursework. I developed the photo gallery further to improve the user experience and code reusability.
 
-I worked on this project as part of the SuperHi coursework (ReactJS). I forked the project in order to redesign the gallery navigation slightly. Instead of clicking on the images to cycle through them, I added forward and back arrows to the counter at the bottom.
+View it live [here](https://mahouhou.github.io/zesty-gallery/).
 
-## Getting started
+By completing this project, I learned:
 
-1. Install [Node.js](https://www.npmjs.com/get-npm).
-
-   `$ brew install node`
-
-2. Clone this repo and cd into the directory.
-3. Install all the dependencies.
-
-   `$ yarn install`
-
-4. Start your server.
-
-   `$ yarn start`
-
-5. Open a new tab and navigate to `http://localhost:3000` to see your app.
-
-## Tech stack
-
-- [React.js](https://reactjs.org)
-- HTML/CSS
+* how to make a loading component that counts how many images have loaded
+* and `useState()` to display the live progress as a progress bar

@@ -2,6 +2,10 @@
 
 A simple photo gallery carousel website.
 
+## Forked
+
+I worked on this project as part of the SuperHi coursework (ReactJS). I forked the project in order to redesign the gallery navigation slightly. Instead of clicking on the images to cycle through them, I added forward and back arrows to the counter at the bottom.
+
 ## Getting started
 
 1. Install [Node.js](https://www.npmjs.com/get-npm).

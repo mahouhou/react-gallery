@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-
 import Loading from "./Loading"
 
 export default function Gallery({ images }) {
